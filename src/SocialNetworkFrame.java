@@ -13,7 +13,7 @@ public class SocialNetworkFrame extends JFrame {
                 signupFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 signupFrame.setVisible(true);
             } else if (e.getSource() == login) {
-
+                // Create login frame
             } else if (e.getSource() == exit) {
                 System.exit(0);
             }
