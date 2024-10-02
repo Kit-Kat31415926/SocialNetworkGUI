@@ -56,19 +56,19 @@ public class SignupFrame extends JFrame {
                 confirmFrame.add(okButton);
                 confirmFrame.setVisible(true);
             } catch (UpperCaseCharacterMissing upperException) {
-                pwdErrorMsg.setText(upperException);
+                pwdErrorMsg.setText(upperException.getMessage());
                 repaint();
             } catch (LowerCaseCharacterMissing lowerException) {
-                pwdErrorMsg.setText(lowerException);
+                pwdErrorMsg.setText(lowerException.getMessage());
                 repaint();
             } catch (SpecialCharacterMissing specialException) {
-                pwdErrorMsg.setText(specialException);
+                pwdErrorMsg.setText(specialException.getMessage());
                 repaint();
             } catch (NumberCharacterMissing numberException) {
-                pwdErrorMsg.setText(numberException);
+                pwdErrorMsg.setText(numberException.getMessage());
                 repaint();
             } catch (Minimum8CharactersRequired min8Exception) {
-                pwdErrorMsg.setText(min8Exception);
+                pwdErrorMsg.setText(min8Exception.getMessage());
                 repaint();
             } catch (Exception ex) {
                 System.out.println("Unexpected error! :(");
