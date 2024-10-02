@@ -19,7 +19,11 @@ public class SocialNetworkFrame extends JFrame {
                 signupFrame.setSize(600,400);
                 signupFrame.setVisible(true);
             } else if (e.getSource() == login) {
-                // Create login frame
+                JFrame signupFrame = new LoginFrame();
+                signupFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+                signupFrame.setTitle("Signup");
+                signupFrame.setSize(600,400);
+                signupFrame.setVisible(true);
             } else if (e.getSource() == exit) {
                 System.exit(0);
             }
