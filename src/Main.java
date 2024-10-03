@@ -21,11 +21,18 @@ public class Main {
             
             JLabel welcomeLabel = new JLabel("WELCOME!");
             welcomeLabel.setFont(new Font("Arial", Font.BOLD, 24));  // Larger font size for welcome message
+	    welcomeLabel.setForeground(new Color(112, 66, 252));
             welcomeLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
             JButton signupButton = new JButton("Signup");
+	    signupButton.setForeground(new Color(255, 65, 121));
+            signupButton.setBackground(new Color(255, 204, 217));
             JButton loginButton = new JButton("Login");
+	    loginButton.setForeground(new Color(255, 65, 121));
+            loginButton.setBackground(new Color(255, 204, 217));
             JButton exitButton = new JButton("Exit");
+	    exit.setForeground(new Color(102, 67, 255));
+            exit.setBackground(new Color(209, 194, 251));
 
             // Set some styling
             signupButton.setFont(new Font("Arial", Font.BOLD, 14));
