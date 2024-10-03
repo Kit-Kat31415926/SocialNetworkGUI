@@ -1,26 +1,29 @@
 public class User {
-    private String fname;
-    private String lname;
-    private String username;
+    private String firstName;
+    private String lastName;
     private String email;
-    private String pwd;
-    User(String f, String l, String u, String e, String p) {
-        fname = f;
-        lname = l;
-        username = u;
-        email = e;
-        pwd = p;
+    private String password;
+
+    public User(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
     }
 
     public String getFirstName() {
-        return fname;
+        return firstName;
     }
 
-    public String getUsername() {
-        return username;
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getPassword() {
-        return pwd;
+        return password;
     }
 }
