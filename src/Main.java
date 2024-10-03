@@ -41,6 +41,7 @@ public class Main {
             // Adding action listeners to buttons using Lamda Expressions
             signupButton.addActionListener(e -> SignupForm.displaySignupForm());
             loginButton.addActionListener(e  -> LoginForm.displayLoginForm());
+	    exitButton.addActionListener(e -> System.exit(0));
 
             frame.add(welcomeLabel, gbc);  // Add welcome label with constraints
             frame.add(signupButton, gbc);  // Add signup button with constraints
