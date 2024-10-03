@@ -62,7 +62,7 @@ public class SignupForm {
     	JTextField lastNameField = new JTextField(20);
     	JTextField emailField = new JTextField(20);
     	JPasswordField passwordField = new JPasswordField(20);
-        frame.setSize(500, 400);
+        frame.setSize(500, 500);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setLocationRelativeTo(null);
         frame.setLayout(new GridBagLayout());
@@ -73,6 +73,8 @@ public class SignupForm {
         gbc.insets = new Insets(10, 30, 10, 30);
 
         JButton submitButton = new JButton("Submit");
+	submitButton.setForeground(new Color(255, 65, 121));
+	submitButton.setBackground(new Color(255, 204, 217));
 
         Font fieldFont = new Font("Arial", Font.PLAIN, 24);
         firstNameField.setFont(fieldFont);
