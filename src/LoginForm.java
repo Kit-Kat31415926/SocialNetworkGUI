@@ -26,7 +26,8 @@ public class LoginForm {
         usernameField.setBorder(BorderFactory.createEmptyBorder());
         passwordField.setBorder(BorderFactory.createEmptyBorder());
 
-        loginButton.setBackground(new Color(200, 200, 200));
+        loginButton.setForeground(new Color(255, 65, 121));
+		loginButton.setBackground(new Color(255, 204, 217));
         loginButton.setOpaque(true);
         loginButton.setBorderPainted(false);
 
