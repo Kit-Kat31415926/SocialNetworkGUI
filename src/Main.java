@@ -3,7 +3,7 @@ import java.awt.*;
 
 /**
  * Creates new Social Networking Login
- * @author Kaitlyn Chiu and Ariana Gonzalez
+ * @author Kaitlyn Chiu and Arianna Gonzalez
  */
 public class Main {
     public static void main(String[] args) {
