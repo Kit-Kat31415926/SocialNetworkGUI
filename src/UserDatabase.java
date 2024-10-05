@@ -1,12 +1,24 @@
 import java.util.HashMap;
 
+/**
+ * Stores all users in database hashed by username
+ */
 public class UserDatabase {
-    private static HashMap<String, User> users = new HashMap<>();
+    private final static HashMap<String, User> users = new HashMap<>();
 
-    public static void addUser(String username, User user) {
-        users.put(username, user);
+    /**
+     * Adds new user to database
+     * @param user - user to be added
+     */
+    public static void addUser(User user) {
+        users.put(user.getUsername(), user);
     }
 
+    /**
+     * Fetches user from database
+     * @param username - username to search for user with
+     * @return User - user information
+     */
     public static User getUser(String username) {
         return users.get(username);
     }
